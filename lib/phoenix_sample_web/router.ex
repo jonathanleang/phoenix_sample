@@ -17,6 +17,8 @@ defmodule PhoenixSampleWeb.Router do
   scope "/", PhoenixSampleWeb do
     pipe_through :browser
 
+    get "/health", PageController, :health
+    get "/loaderio-d2f80ab6b2ea3bea0ccd54b4d0c057a9", PageController, :loaderio
     live "/", PageLive, :index
   end
 

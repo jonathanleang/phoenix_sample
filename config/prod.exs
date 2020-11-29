@@ -16,6 +16,13 @@ config :phoenix_sample, PhoenixSampleWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+# https://elixirforum.com/t/docker-swarm-phoenix-channels/5841/4
+config :peerage, via: Peerage.Via.Dns,
+  dns_name: "tasks.srv-captain--test-elixir",
+  app_name: "phoenix_sample",
+  interval: 5,
+  log_results: true
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key

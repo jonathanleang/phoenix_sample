@@ -10,7 +10,7 @@ use Mix.Config
 # Configures the endpoint
 config :phoenix_sample, PhoenixSampleWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "y3yqZ3z22FyZFxuGM59Pnsgkol13Ics6QwALOCI3KWprHKz9ohc5KzdGFUTvfniC",
+  secret_key_base: "zyHabvaUamyWRq08eZaEWZwRV0ICPluC28NcVyUESZP/FSxT0gCCB44YJo1blgBh",
   render_errors: [view: PhoenixSampleWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: PhoenixSample.PubSub,
   live_view: [signing_salt: "99Is4YMe"]

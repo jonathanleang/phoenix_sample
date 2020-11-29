@@ -3,7 +3,7 @@ defmodule PhoenixSampleWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, query: "", results: %{}, connected: connected?(socket))}
+    {:ok, assign(socket, query: "", results: %{}, connected: connected?(socket), nodes: Kernel.inspect(Node.list++[node]))}
   end
 
   @impl true

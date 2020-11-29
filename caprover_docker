@@ -1,5 +1,5 @@
 FROM elixir:1.10.3-alpine AS build
-
+ENV MIX_ENV=prod
 # install build dependencies
 RUN apk add --no-cache build-base npm git python
 
@@ -12,7 +12,7 @@ RUN mix local.hex --force && \
 
 # set build ENV
 ENV MIX_ENV=prod
-ENV SECRET_KEY_BASE=OiHyw9mIm05syvuSnZTwY0TrpQHh1GPFwZN2EbswJzNRYNPXvs4y61IlRz5OvvXl
+ENV SECRET_KEY_BASE=xpYKH4BqpSB7WvVVbAwmIfx1RgF6SUzDqCEXiwaY3j/VPh3/w0gvxR+T7x6ASEHN
 
 # install mix dependencies
 COPY . ./

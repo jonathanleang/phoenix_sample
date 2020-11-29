@@ -1,0 +1,1 @@
+tar -zcvf sample.tar.gz . 
